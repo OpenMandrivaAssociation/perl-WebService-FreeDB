@@ -16,6 +16,7 @@ BuildRequires:	perl-devel
 %endif
 BuildRequires:  perl(LWP::UserAgent)
 BuildArch:	noarch
+Buildroot:	%{_tmppath}/%{name}-%{version}
 
 %description
 WebService-FreeDB is a perl module for retrieving entries from FreeDB 
