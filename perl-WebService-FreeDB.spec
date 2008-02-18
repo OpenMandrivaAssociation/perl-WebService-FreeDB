@@ -1,7 +1,7 @@
 %define module	WebService-FreeDB
 %define name	perl-%{module}
 %define version 0.77
-%define release %mkrel 1 
+%define release %mkrel 2 
 
 Name:		%{name}
 Version:	%{version}
