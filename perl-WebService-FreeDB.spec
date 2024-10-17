@@ -8,7 +8,7 @@ Release:	4
 Summary:	FreeDB search by keyword	
 License:	GPL
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{upstream_name}
+URL:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/WebService/%{upstream_name}-%{upstream_version}.tar.bz2
 
 BuildRequires:	perl-devel
