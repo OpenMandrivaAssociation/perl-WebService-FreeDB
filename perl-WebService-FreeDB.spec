@@ -1,15 +1,13 @@
 %define upstream_name	 WebService-FreeDB
-%define upstream_version 0.77
-
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	0.77
+Release:	5
 
 Summary:	FreeDB search by keyword	
 License:	GPL
 Group:		Development/Perl
-URL:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/WebService/%{upstream_name}-%{upstream_version}.tar.bz2
+URL:		https://metacpan.org/dist/%{upstream_name}
+Source0:	http://www.cpan.org/modules/by-module/WebService/%{upstream_name}-%{version}.tar.bz2
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -21,7 +19,7 @@ WebService-FreeDB is a perl module for retrieving entries from FreeDB
 by searching for keywords (artist,track,album,rest) 
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor 
@@ -42,9 +40,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 %changelog
 * Tue Jul 28 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.770.0-1mdv2010.0
 + Revision: 401917
-- rebuild using %%perl_convert_version
-
-* Thu Jul 31 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.77-5mdv2009.0
+- rebuild using %0.77 Thu Jul 31 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.77-5mdv2009.0
 + Revision: 258786
 - rebuild
 
