@@ -2,7 +2,7 @@
 %define upstream_version 0.79
 Name:		perl-%{upstream_name}
 Version:	0.79
-Release:	1
+Release:	2
 
 Summary:	FreeDB search by keyword	
 License:	GPL
@@ -20,14 +20,16 @@ WebService-FreeDB is a perl module for retrieving entries from FreeDB
 by searching for keywords (artist,track,album,rest) 
 
 %prep
-%setup -q -n %{upstream_name}-%{version}
+%setup -q -n WebService-FreeDB-0.79
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor 
 %make
 
 %check
-# make test
+# soft: do not fail package on test failures
+set +e
+# make test || :
 
 %install
 %makeinstall_std 
