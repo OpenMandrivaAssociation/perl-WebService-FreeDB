@@ -2,7 +2,7 @@
 %define upstream_version 0.79
 Name:		perl-%{upstream_name}
 Version:	0.79
-Release:	2
+Release:	3
 
 Summary:	FreeDB search by keyword	
 License:	GPL
